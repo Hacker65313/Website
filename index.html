@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hacking Mas Jawa - Ethical Hacking Services</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<script src="https://sites.super.myninja.ai/_assets/ninja-daytona-script.js"></script>
+</head>
+<body>
+    <!-- Preloader / Welcome Animation -->
+    <div class="preloader" id="preloader">
+        <div class="preloader-content">
+            <h1 class="preloader-title">Welcome to Hacking Mas Jawa</h1>
+            <p class="preloader-subtitle">
+                <span class="typing-text" id="typing-text"></span>
+            </p>
+            <div class="preloader-line"></div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="logo" onclick="navigateTo('beranda')">
+            <i class="fas fa-shield-halved"></i> Hacking Mas Jawa
+        </div>
+        <div class="hamburger" id="hamburger" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu-overlay" id="menu-overlay" onclick="toggleMenu()"></div>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobile-menu">
+        <ul class="nav-links">
+            <li>
+                <a href="#beranda" class="nav-link active" data-section="beranda" onclick="navigateTo('beranda')">
+                    <i class="fas fa-home"></i> Beranda
+                </a>
+            </li>
+            <li>
+                <a href="#jasa" class="nav-link" data-section="jasa" onclick="navigateTo('jasa')">
+                    <i class="fas fa-list"></i> List Jasa
+                </a>
+            </li>
+            <li>
+                <a href="#contact" class="nav-link" data-section="contact" onclick="navigateTo('contact')">
+                    <i class="fas fa-address-book"></i> Contact Person
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <!-- Main Content -->
+    <main id="main-content">
+        <!-- Hero Section (Beranda) -->
+        <section class="section hero active" id="beranda">
+            <div class="floating-elements">
+                <div class="floating-shape">
+                    <i class="fas fa-shield-halved" style="font-size: 100px; color: #00ff88;"></i>
+                </div>
+                <div class="floating-shape">
+                    <i class="fas fa-bug" style="font-size: 80px; color: #00ff88;"></i>
+                </div>
+                <div class="floating-shape">
+                    <i class="fas fa-terminal" style="font-size: 60px; color: #00ff88;"></i>
+                </div>
+            </div>
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    <span class="highlight">Ethical Hacking</span><br>
+                    & Cyber Security
+                </h1>
+                <p class="hero-subtitle">
+                    Melindungi sistem digital Anda dengan teknologi keamanan siber terdepan. 
+                    Profesional, terpercaya, dan legal.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#jasa" class="btn btn-primary" onclick="navigateTo('jasa')">
+                        <i class="fas fa-rocket"></i> Lihat Jasa
+                    </a>
+                    <a href="#contact" class="btn btn-secondary" onclick="navigateTo('contact')">
+                        <i class="fas fa-envelope"></i> Hubungi Kami
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section (Beranda) -->
+        <section class="section about-section" id="about">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Apa itu <span class="highlight">Ethical Hacking?</span></h2>
+                    <p class="section-subtitle">
+                        Memahami dunia keamanan siber dan hacking legal untuk melindungi aset digital Anda
+                    </p>
+                </div>
+
+                <div class="about-grid">
+                    <div class="about-card">
+                        <div class="about-card-icon">
+                            <i class="fas fa-user-shield"></i>
+                        </div>
+                        <h3>Ethical Hacking</h3>
+                        <p>
+                            Ethical hacking adalah praktik menemukan celah keamanan dalam sistem dengan izin pemilik sistem. 
+                            Berbeda dengan hacker jahat, ethical hacker atau "white hat hacker" bekerja untuk membantu 
+                            organisasi mengidentifikasi dan memperbaiki kerentanan sebelum disalahgunakan oleh pihak yang tidak bertanggung jawab. 
+                            Profesional ini menggunakan teknik yang sama dengan hacker pada umumnya, namun dengan tujuan mulia yaitu 
+                            melindungi dan memperkuat keamanan sistem.
+                        </p>
+                    </div>
+
+                    <div class="about-card">
+                        <div class="about-card-icon">
+                            <i class="fas fa-balance-scale"></i>
+                        </div>
+                        <h3>Hacking Legal</h3>
+                        <p>
+                            Hacking legal merujuk pada semua aktivitas pengujian keamanan yang dilakukan dalam kerangka hukum yang berlaku. 
+                            Di Indonesia, kegiatan ini diatur dalam UU ITE dan peraturan terkait keamanan siber. 
+                            Seorang ethical hacker harus mendapatkan izin tertulis sebelum melakukan pengujian, 
+                            mematuhi batasan yang ditetapkan, dan melaporkan temuan secara bertanggung jawab. 
+                            Profesional bersertifikat seperti CEH (Certified Ethical Hacker) memiliki standar etika yang ketat.
+                        </p>
+                    </div>
+
+                    <div class="about-card">
+                        <div class="about-card-icon">
+                            <i class="fas fa-file-contract"></i>
+                        </div>
+                        <h3>Regulasi di Indonesia</h3>
+                        <p>
+                            Di Indonesia, aktivitas keamanan siber diatur oleh UU No. 11 Tahun 2008 tentang Informasi dan Transaksi Elektronik (UU ITE), 
+                            UU No. 19 Tahun 2016 tentang Perubahan UU ITE, serta Peraturan Menteri Kominfo terkait keamanan sistem elektronik. 
+                            Setiap pengujian penetrasi harus disertai surat perjanjian kerahasiaan dan izin eksplisit dari pemilik sistem. 
+                            Pelanggaran dapat dikenai sanksi pidana sesuai ketentuan yang berlaku.
+                        </p>
+                    </div>
+
+                    <div class="about-card">
+                        <div class="about-card-icon">
+                            <i class="fas fa-certificate"></i>
+                        </div>
+                        <h3>Sertifikasi Profesional</h3>
+                        <p>
+                            Seorang ethical hacker profesional umumnya memiliki sertifikasi internasional yang diakui industri. 
+                            Sertifikasi seperti CEH (Certified Ethical Hacker) dari EC-Council, OSCP (Offensive Security Certified Professional), 
+                            dan CompTIA Security+ menjadi standar kompetensi dalam bidang ini. 
+                            Sertifikasi tersebut menjamin bahwa praktisi memiliki pengetahuan dan keterampilan yang diperlukan 
+                            untuk melakukan pengujian keamanan secara profesional dan bertanggung jawab.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Additional Info Section -->
+                <div class="section-header" style="margin-top: 5rem;">
+                    <h2 class="section-title">Mengapa <span class="highlight">Penting?</span></h2>
+                </div>
+
+                <div class="about-grid">
+                    <div class="about-card">
+                        <div class="about-card-icon">
+                            <i class="fas fa-lock"></i>
+                        </div>
+                        <h3>Perlindungan Data</h3>
+                        <p>
+                            Dengan meningkatnya serangan siber, perlindungan data menjadi prioritas utama bagi setiap organisasi. 
+                            Ethical hacking membantu mengidentifikasi titik lemah sebelum penyerang mengeksploitasinya. 
+                            Data pelanggan, informasi keuangan, dan rahasia dagang perlu dilindungi dengan sistem keamanan yang teruji.
+                        </p>
+                    </div>
+
+                    <div class="about-card">
+                        <div class="about-card-icon">
+                            <i class="fas fa-building"></i>
+                        </div>
+                        <h3>Reputasi Bisnis</h3>
+                        <p>
+                            Keamanan sistem yang terjamin meningkatkan kepercayaan pelanggan dan mitra bisnis. 
+                            Satu insiden keamanan dapat merusak reputasi yang dibangun bertahun-tahun. 
+                            Investasi dalam keamanan siber adalah investasi dalam keberlangsungan bisnis jangka panjang.
+                        </p>
+                    </div>
+
+                    <div class="about-card">
+                        <div class="about-card-icon">
+                            <i class="fas fa-gavel"></i>
+                        </div>
+                        <h3>Kepatuhan Regulasi</h3>
+                        <p>
+                            Banyak industri wajib memenuhi standar keamanan seperti PCI-DSS untuk pembayaran, 
+                            ISO 27001 untuk manajemen keamanan informasi, atau regulasi sektor spesifik lainnya. 
+                            Pengujian penetrasi secara berkala menjadi syarat untuk memenuhi kepatuhan tersebut.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section class="section services-section" id="jasa">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Layanan <span class="highlight">Jasa Kami</span></h2>
+                    <p class="section-subtitle">
+                        Solusi keamanan siber profesional untuk melindungi aset digital Anda
+                    </p>
+                </div>
+
+                <div class="services-grid">
+                    <!-- Service 1 -->
+                    <div class="service-card">
+                        <span class="service-number">01</span>
+                        <div class="service-icon">
+                            <i class="fas fa-globe"></i>
+                        </div>
+                        <h3>Pengembalian akun sosmed</h3>
+                        <p>
+                            Pengembalian akun all sosmed dari Instagram,facebook,tiktok,gmail,twiter dan masih banyak lainya.
+                        </p>
+                    </div>
+
+                    <!-- Service 2 -->
+                    <div class="service-card">
+                        <span class="service-number">02</span>
+                        <div class="service-icon">
+                            <i class="fas fa-search"></i>
+                        </div>
+                        <h3>Sadap hp</h3>
+                        <p>
+                            Sadap hp meliputi dari pengambilan data berupa contact,foto,pesan dll.
+                        </p>
+                    </div>
+
+                    <!-- Service 3 -->
+                    <div class="service-card">
+                        <span class="service-number">03</span>
+                        <div class="service-icon">
+                            <i class="fas fa-network-wired"></i>
+                        </div>
+                        <h3>Pelacakan lokasi</h3>
+                        <p>
+                            Pelacakan lokasu terdiri dari lokasi terkini dan bisa lacak melalui akun sosmed maupun gmail dan no hp.
+                        </p>
+                    </div>
+
+                    <!-- Service 4 -->
+                    <div class="service-card">
+                        <span class="service-number">04</span>
+                        <div class="service-icon">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                        <h3>Pembuatan wesbite</h3>
+                        <p>
+                            Pembuatan wesbite dengan metode html,css,atau yang lainya.
+                        </p>
+                    </div>
+
+                    <!-- Service 5 -->
+                    <div class="service-card">
+                        <span class="service-number">05</span>
+                        <div class="service-icon">
+                            <i class="fas fa-cloud"></i>
+                        </div>
+                        <h3>Cloud Security Audit</h3>
+                        <p>
+                            Audit keamanan infrastruktur cloud (AWS, Azure, GCP) termasuk IAM configuration, 
+                            S3 bucket security, security groups, dan compliance checking sesuai best practices.
+                        </p>
+                    </div>
+
+                    <!-- Service 6 -->
+                    <div class="service-card">
+                        <span class="service-number">06</span>
+                        <div class="service-icon">
+                            <i class="fas fa-server"></i>
+                        </div>
+                        <h3>Server Hardening</h3>
+                        <p>
+                            Penguatan keamanan server Linux dan Windows meliputi konfigurasi SSH, firewall rules, 
+                            service management, patch management, dan implementasi security baseline.
+                        </p>
+                    </div>
+
+                    <!-- Service 7 -->
+                    <div class="service-card">
+                        <span class="service-number">07</span>
+                        <div class="service-icon">
+                            <i class="fas fa-user-secret"></i>
+                        </div>
+                        <h3>Social Engineering Assessment</h3>
+                        <p>
+                            Simulasi serangan social engineering untuk menguji awareness karyawan terhadap phishing, 
+                            pretexting, baiting, dan teknik manipulasi psikologis lainnya.
+                        </p>
+                    </div>
+
+                    <!-- Service 8 -->
+                    <div class="service-card">
+                        <span class="service-number">08</span>
+                        <div class="service-icon">
+                            <i class="fas fa-file-alt"></i>
+                        </div>
+                        <h3>Security Consulting & Training</h3>
+                        <p>
+                            Konsultasi keamanan siber dan pelatihan untuk tim IT atau pengelola sistem, 
+                            mencakup secure coding practices, incident response, dan security awareness program.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="section contact-section" id="contact">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Hubungi <span class="highlight">Kami</span></h2>
+                    <p class="section-subtitle">
+                        Konsultasi gratis untuk kebutuhan keamanan siber Anda
+                    </p>
+                </div>
+
+                <div class="contact-container">
+                    <div class="contact-info">
+                        <h3>Informasi Kontak</h3>
+                        
+                        <div class="contact-item">
+                            <div class="contact-item-icon">
+                                <i class="fab fa-whatsapp"></i>
+                            </div>
+                            <div class="contact-item-content">
+                                <h4>WhatsApp</h4>
+                                <p>
+                                    <a href="https://wa.me/6282338065465" target="_blank">082338065465</a>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-item-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="contact-item-content">
+                                <h4>Telepon</h4>
+                                <p>082338065465</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-item-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div class="contact-item-content">
+                                <h4>Jam Operasional</h4>
+                                <p>Senin - Sabtu: 09:00 - 21:00 WIB</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-item-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-item-content">
+                                <h4>Lokasi</h4>
+                                <p>Indonesia (Remote Services)</p>
+                            </div>
+                        </div>
+
+                        <a href="https://wa.me/6282338065465?text=Halo%20Mas%20Jawa,%20saya%20ingin%20konsultasi%20tentang%20layanan%20keamanan%20siber" 
+                           target="_blank" class="whatsapp-btn">
+                            <i class="fab fa-whatsapp"></i>
+                            Chat via WhatsApp
+                        </a>
+                    </div>
+
+                    <div class="contact-form">
+                        <h3>Kirim Pesan</h3>
+                        <form id="contactForm" onsubmit="submitForm(event)">
+                            <div class="form-group">
+                                <label for="name">Nama Lengkap</label>
+                                <input type="text" id="name" name="name" placeholder="Masukkan nama Anda" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" placeholder="Masukkan email Anda" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="subject">Subjek</label>
+                                <input type="text" id="subject" name="subject" placeholder="Topik yang ingin dibahas" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Pesan</label>
+                                <textarea id="message" name="message" placeholder="Jelaskan kebutuhan Anda..." required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary" style="width: 100%;">
+                                <i class="fas fa-paper-plane"></i> Kirim Pesan
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-logo">
+            <i class="fas fa-shield-halved"></i> Hacking Mas Jawa
+        </div>
+        <p class="footer-text">
+            &copy; 2024 Hacking Mas Jawa. Ethical Hacking & Cyber Security Services.
+        </p>
+        <div class="footer-social">
+            <a href="https://wa.me/6282338065465" target="_blank" title="WhatsApp">
+                <i class="fab fa-whatsapp"></i>
+            </a>
+            <a href="#" title="Instagram">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="#" title="Telegram">
+                <i class="fab fa-telegram"></i>
+            </a>
+            <a href="#" title="GitHub">
+                <i class="fab fa-github"></i>
+            </a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
